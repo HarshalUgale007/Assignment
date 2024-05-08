@@ -7,7 +7,6 @@ def read_data(test_file, label_file):
     label_data = pd.read_csv(label_file)
     return test_data, label_data
 
-
 def plot_time_series(test_data, label_data):
     plt.figure(figsize=(12, 6))
     plt.plot(test_data['Time'], test_data['Value'], label='Time Series Data')
@@ -28,6 +27,7 @@ def perform_eda(test_data):
 def find_root_cause(eda_results):
     root_cause = []
     return root_cause
+
 
 
 test_file = 'files/files/test.csv'
